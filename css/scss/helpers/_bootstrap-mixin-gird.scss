@@ -1,0 +1,530 @@
+// تم الانتهاء من المعالجة 
+
+// يمكنك استخدامها كما في المثال في اخر الصفحة 
+
+// زجدت هذه الطريقة افضل شي من حيث انها 
+// لا تستخدم كلاسات ليس لها لزمه و سهلة الكتابة في الصفحات و التذكر
+
+@use './media_query' as *;
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+@mixin col-1 {
+  flex: 0 0 auto;
+  width: 8.33333333%;
+}
+@mixin col-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+@mixin col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+@mixin col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+@mixin col-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+
+@mixin col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+@mixin col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+@mixin col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+@mixin col-9 {
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+@mixin col-10 {
+  flex: 0 0 auto;
+  width: 83.33333333%;
+}
+
+@mixin col-11 {
+  flex: 0 0 auto;
+  width: 91.66666667%;
+}
+
+@mixin col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+@mixin col-sm-1 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+}
+
+@mixin col-sm-2 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+@mixin col-sm-3 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@mixin col-sm-4 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+@mixin col-sm-5 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@mixin col-sm-6 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+
+@mixin col-sm-7 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+
+@mixin col-sm-8 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@mixin col-sm-9 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+
+@mixin col-sm-10 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+
+@mixin col-sm-11 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+}
+
+@mixin col-sm-12 {
+  @include min-w($sm) {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@mixin col-md-1 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+}
+
+@mixin col-md-2 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+@mixin col-md-3 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@mixin col-md-4 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+@mixin col-md-5 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@mixin col-md-6 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+
+@mixin col-md-7 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+
+@mixin col-md-8 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@mixin col-md-9 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+
+@mixin col-md-10 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+
+@mixin col-md-11 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+}
+
+@mixin col-md-12 {
+  @include min-w($md) {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@mixin col-lg-1 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+}
+
+@mixin col-lg-2 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+@mixin col-lg-3 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@mixin col-lg-4 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+@mixin col-lg-5 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@mixin col-lg-6 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+
+@mixin col-lg-7 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+
+@mixin col-lg-8 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@mixin col-lg-9 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+
+@mixin col-lg-10 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+
+@mixin col-lg-11 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+}
+
+@mixin col-lg-12 {
+  @include min-w($lg) {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@mixin col-xl-1 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+}
+
+@mixin col-xl-2 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+@mixin col-xl-3 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@mixin col-xl-4 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+@mixin col-xl-5 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@mixin col-xl-6 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+
+@mixin col-xl-7 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+
+@mixin col-xl-8 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@mixin col-xl-9 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+
+@mixin col-xl-10 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+
+@mixin col-xl-11 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+}
+
+@mixin col-xl-12 {
+  @include min-w($xl) {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+
+@mixin col-xx-1 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+  }
+}
+
+@mixin col-xx-2 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+}
+
+@mixin col-xx-3 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@mixin col-xx-4 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+@mixin col-xx-5 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+}
+
+@mixin col-xx-6 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+
+@mixin col-xx-7 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+  }
+}
+
+@mixin col-xx-8 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+
+@mixin col-xx-9 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+
+@mixin col-xx-10 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+
+@mixin col-xx-11 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+  }
+}
+
+@mixin col-xx-12 {
+  @include min-w($xx) {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+// example 
+
+.hello {
+
+    @include col-xx-1 ;
+    padding-left: 11px;
+
+}

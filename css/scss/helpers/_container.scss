@@ -1,0 +1,26 @@
+@use "./media_query" as *;
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  width: 100%;
+  @include min-w($sm) {
+    width: 540px;
+  }
+  @include min-w($md) {
+    width: 720px;
+  }
+  @include min-w($lg) {
+    width: 960px;
+  }
+  @include min-w($xl) {
+    width: 1140px;
+  }
+  @include min-w($xx) {
+    width: 1320px;
+  }
+  @include min-w(1620px) {
+    width: 1440px;
+  }
+}

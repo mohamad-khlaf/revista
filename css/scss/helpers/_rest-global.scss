@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+input,
+input:focus,
+input:hover,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+video,
+image {
+  max-width: 100%;
+}

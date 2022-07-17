@@ -1,0 +1,53 @@
+.facebook {
+  color: #1877f2;
+}
+.facebook:hover {
+  background-color: white;
+  filter: drop-shadow(0 0 10px white);
+}
+.twitter {
+  color: #1da1f2;
+}
+.twitter:hover {
+  background-color: #e1e8ed;
+  filter: drop-shadow(0 0 10px #e1e8ed);
+}
+.youtube {
+  color: #ff0000;
+  background-color: #282828;
+}
+.youtube:hover {
+  color: #ff000085;
+  background-color: white;
+  filter: drop-shadow(0 0 10px white);
+}
+.whatsapp {
+  background: #25d366;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+  background: white;
+  filter: drop-shadow(0 0 10px #fffc00);
+}
+
+.snapchat {
+  background: #fffc00;
+  color: black;
+}
+
+.snapchat:hover {
+  background: black;
+  color: #fffc00;
+  filter: drop-shadow(0 0 10px #fffc00);
+}
+.phone {
+  background: #cadbd0;
+  color: RGB(66, 103, 178);
+}
+
+.phone:hover {
+  color: #cadbd0;
+  background: #ececec;
+  filter: drop-shadow(0 0 10px #ececec);
+}
