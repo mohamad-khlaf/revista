@@ -3,6 +3,7 @@
     --main-beige: #dfb352;
     --secondary-color: #feedbf;
 }
+
 ::-webkit-scrollbar {
     background: var(--secondary-color);
 }
@@ -14,11 +15,10 @@
     background: #9a7511ff;
 }
 body {
-
     font-family: 'Cairo', sans-serif;
     text-align: right;
-
 }
+
 @media(min-width:1620px)
 {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -308,6 +308,7 @@ h2{
   
     box-shadow: 0px 0px 10px rgba(0,0,0,0.02);
     top:0px;
+    border-bottom: 2px solid white;
 }
 
 .block:hover{
