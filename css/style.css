@@ -3,8 +3,6 @@
     --main-beige: #dfb352;
     --secondary-color: #feedbf;
 }
- .main-btn-downlaod {
- }
 ::-webkit-scrollbar {
     background: var(--secondary-color);
 }
@@ -607,7 +605,7 @@ width:100%}
             height: 261px;
             left: 22%;
             left: 25%;
-            border: 2px solid white;
+            border: 4px solid white;
         }
         .content-data__4 p br{
             display: none;
@@ -928,7 +926,7 @@ header{
     margin-top:-76px;
     }
     .content img{
-            top: -166px;
+            top: -70px;
     width: 266px;
     }
     
@@ -1088,6 +1086,7 @@ select{
 .h2-title {
     text-align: center;
     margin: 25px auto;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid yellowgreen;
     width: fit-content;
+    color: yellowgreen;
 }
